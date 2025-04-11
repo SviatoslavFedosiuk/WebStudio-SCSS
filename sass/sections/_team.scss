@@ -1,0 +1,104 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--team-background-color);
+}
+
+.team-subtitle {
+    color: var(--max-text-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.team-item {
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-icon {
+    width: 270px;
+    height: 260px;
+}
+
+.team-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-slogan {
+    color: var(--max-text-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+    margin-bottom: 10px;
+}
+
+.team-text {
+    color: var(--mini-text-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.18;
+    letter-spacing: 0.48px;
+}
+
+a[href^="https"] {
+    color: var(--primary-color);
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 0.42px;
+}
+
+.team-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-button:hover {
+    background-color: var(--button-backgrouhd-color);
+
+    .team-icons {
+        fill: #ffffff;
+    }
+}
+
+.team-listt {
+    margin-top: 16px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.team-icons {
+    width: 20px;
+    height: 20px;
+    fill: var(--new-section);
+}

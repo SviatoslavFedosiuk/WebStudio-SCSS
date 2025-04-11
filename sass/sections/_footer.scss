@@ -1,0 +1,197 @@
+footer {
+    background-color: var(--header-footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer>.container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-link {
+    color: var(--button-backgrouhd-color);
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.38;
+    letter-spacing: 0.78px;
+}
+
+.footer-span {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.address {
+    margin-top: 20px;
+    font-style: normal;
+    width: 231px;
+}
+
+.address-list :first-child {
+    margin-bottom: 9px;
+}
+
+.address-link {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.address-gmail {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+}
+
+.address-list {
+    margin-top: 9px;
+}
+
+.soc {
+    margin-left: 70px;
+}
+
+.soc>.container {
+    display: flex;
+}
+
+.soc-title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.soc-list {
+    display: flex;
+    gap: 10px;
+}
+
+.soc-button {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-button:hover {
+    background-color: var(--button-backgrouhd-color);
+}
+
+.soc-icon {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
+.suscribe {
+    margin-left: 93px;
+}
+
+.suscribe-title {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.suscribe-form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.suscribe-label {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+.suscribe-input {
+    margin-right: 12px;
+    background-color: var(--header-footer-background-color);
+    border-radius: 4px;
+    border: 1px solid #ffffff30;
+    background-color: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    ;
+    width: 358px;
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+}
+
+.suscribe-input:focus {
+    outline: 1px solid #ffffff30;
+}
+
+.suscribe-send {
+    position: relative;
+}
+
+.suscribe-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--button-backgrouhd-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 28px;
+    padding-right: 62px;
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+    position: relative;
+
+}
+
+.suscribe-svg {
+    fill: #FFF;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 26%;
+    right: 15%;
+}

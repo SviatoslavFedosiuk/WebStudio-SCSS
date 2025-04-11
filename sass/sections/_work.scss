@@ -1,0 +1,45 @@
+.work {
+    padding-bottom: 94px;
+}
+
+.work-subtitle {
+    color: var(--max-text-color);
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.16;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.work-list {
+    display: flex;
+    gap: 30px;
+}
+
+.work-item {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.work-bcg {
+    position: absolute;
+    bottom: 0;
+    background-color: #2f303acd;
+    width: 100%;
+    height: 23.812%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
