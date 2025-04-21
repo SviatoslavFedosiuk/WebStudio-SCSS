@@ -1,20 +1,20 @@
 .advantudes {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.advantudes-list {
+
+&__list {
     display: flex;
     gap: 30px;
 }
 
-.advantudes-item:nth-child(1)::before {
+&__item:nth-child(1)::before {
     content: "";
     display: block;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background-color: var(--team-background-color);
+    background-color: $team-background-color;
     background-image: url(../images/antennasq.png);
     background-position: center;
     background-size: 70px;
@@ -22,13 +22,13 @@
     border-radius: 4px;
 }
 
-.advantudes-item:nth-child(2)::before {
+&__item:nth-child(2)::before {
     content: "";
     display: block;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background-color: var(--team-background-color);
+    background-color: $team-background-color;
     background-image: url(../images/clocksq.png);
     background-position: center;
     background-size: 70px;
@@ -36,13 +36,13 @@
     border-radius: 4px;
 }
 
-.advantudes-item:nth-child(3)::before {
+&__item:nth-child(3)::before {
     content: "";
     display: block;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background-color: var(--team-background-color);
+    background-color: $team-background-color;
     background-image: url(..//images/diagramsq.png);
     background-position: center;
     background-size: 70px;
@@ -50,13 +50,13 @@
     border-radius: 4px;
 }
 
-.advantudes-item:nth-child(4)::before {
+&__item:nth-child(4)::before {
     content: "";
     display: block;
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
-    background-color: var(--team-background-color);
+    background-color: $team-background-color;
     background-image: url(../images/astronautsq.png);
     background-position: center;
     background-size: 70px;
@@ -64,8 +64,8 @@
     border-radius: 4px;
 }
 
-.advantudes-slogan {
-    color: var(--max-text-color);
+&__slogan {
+    color: $max-text-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 700;
@@ -75,11 +75,12 @@
     margin-bottom: 10px;
 }
 
-.advantudes-text {
-    color: var(--mini-text-color);
+&__text {
+    color: $mini-text-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+}
 }

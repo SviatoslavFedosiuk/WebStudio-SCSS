@@ -1,17 +1,17 @@
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.clients>.container {
+
+&>.container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.clients-title {
+&__title {
     margin-bottom: 50px;
-    color: var(--max-text-color);
+    color: $max-text-color;
     text-align: center;
     font-family: Roboto;
     font-size: 36px;
@@ -21,17 +21,17 @@
     letter-spacing: 1.08px;
 }
 
-.clients-list {
+&__list {
     display: flex;
     gap: 30px;
 }
 
-.clients-box {
+&__box {
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid;
-    color: var(--new-section);
+    color: $new-section;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,27 +40,28 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-box:hover {
+&__box:hover {
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid;
-    color: var(--button-backgrouhd-color);
+    color: $button-backgrouhd-color;
 
-    .clients-icon {
-        fill: var(--button-backgrouhd-color);
+    &__icon {
+        fill: $button-backgrouhd-color;
     }
 }
 
-.clients-icon {
+&__icon {
     width: 106px;
     height: 60px;
-    fill: var(--new-section);
+    fill: $new-section;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-icon:hover {
-    fill: var(--button-backgrouhd-color);
+&__icon:hover {
+    fill: $button-backgrouhd-color;
+}
 }

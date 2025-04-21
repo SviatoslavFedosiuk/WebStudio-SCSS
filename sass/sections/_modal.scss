@@ -15,7 +15,7 @@
     width: 528px;
     height: auto;
     border-radius: 4px;
-    background: var(--primary-color);
+    background: $primary-color;
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
         0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -64,7 +64,7 @@
 .modal-svg {
     width: 18px;
     height: 18px;
-    fill: var(--logo-color);
+    fill: $logo-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -72,11 +72,11 @@
 
 .modal-svg:hover,
 .modal-svg:focus {
-    fill: var(--button-backgrouhd-color);
+    fill: $button-backgrouhd-color;
 }
 
 .modal-title {
-    color: var(--max-text-color);
+    color: $max-text-color;
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
@@ -88,7 +88,7 @@
 }
 
 .model-label {
-    color: var(--mini-text-color);
+    color: $mini-text-color;
     font-family: Roboto;
     font-size: 12px;
     font-style: normal;
@@ -118,12 +118,12 @@
 .modal-input:focus {
     border: none;
     outline: 1px solid;
-    color: var(--button-backgrouhd-color);
+    color: $button-backgrouhd-color;
 }
 
 .modal-input:hover+.form-svg,
 .modal-input:focus+.form-svg {
-    fill: var(--button-backgrouhd-color);
+    fill: $button-backgrouhd-color;
     background-color: #FFF;
 }
 
@@ -155,13 +155,13 @@
 .modal-textarea:focus {
     border: none;
     outline: 1px solid;
-    color: var(--button-backgrouhd-color);
+    color: $button-backgrouhd-color;
 }
 
 .form-svg {
     width: 18px;
     height: 18px;
-    fill: var(--logo-color);
+    fill: $logo-color;
     position: absolute;
     top: 50%;
     left: 3%;
@@ -171,7 +171,7 @@
 }
 
 .form-svg:hover {
-    fill: var(--button-backgrouhd-color);
+    fill: $button-backgrouhd-color;
 }
 
 .checkbox {
@@ -179,7 +179,7 @@
     height: 15px;
     margin-right: 8px;
     border: 2px solid;
-    border-color: var(--max-text-color);
+    border-color: $max-text-color;
     border-radius: 50%;
     transition-property: border-color, border;
     transition-duration: 250ms;
@@ -188,11 +188,11 @@
 
 .checkbox:hover:checked,
 .checkbox:focus:checked {
-    border-color: var(--button-backgrouhd-color);
+    border-color: $button-backgrouhd-color;
 }
 
 .checkbox:checked {
-    background-color: var(--button-backgrouhd-color);
+    background-color: $button-backgrouhd-color;
     position: relative;
 }
 
@@ -216,7 +216,7 @@
 }
 
 .model-text {
-    color: var(--mini-text-color);
+    color: $mini-text-color;
     font-family: Roboto;
     font-size: 14px;
     font-style: normal;
@@ -261,7 +261,7 @@
     line-height: 30px;
     letter-spacing: 0.96px;
     border-radius: 4px;
-    background-color: var(--button-backgrouhd-color);
+    background-color: $button-backgrouhd-color;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     width: 200px;
     height: 50px;

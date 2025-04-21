@@ -8,10 +8,10 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-}
 
-.page-title {
-    color: var(--primary-color);
+
+&__title {
+    color: $primary-color;
     text-align: center;
     font-family: "Roboto";
     font-size: 44px;
@@ -25,9 +25,9 @@
     margin-bottom: 30px;
 }
 
-.page-button {
-    background-color: var(--button-backgrouhd-color);
-    color: var(--primary-color);
+&__button {
+    background-color: $button-backgrouhd-color;
+    color: $primary-color;
     font-family: "Roboto";
     text-align: center;
     font-size: 16px;
@@ -40,4 +40,5 @@
     padding-top: 10px;
     padding-bottom: 10px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
 }

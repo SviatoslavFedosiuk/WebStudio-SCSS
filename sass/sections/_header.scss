@@ -1,43 +1,42 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    border-bottom: 1px solid #ECECEC;
-}
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 
-.header>.container {
+  & > .container {
     display: flex;
     align-items: center;
-}
+  }
 
-.header-link {
-    color: var(--button-backgrouhd-color);
+  &__link {
+    color: $button-backgrouhd-color;
     font-family: "Raleway";
     font-size: 26px;
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
     margin-right: 93px;
-}
+  }
 
-.header-span {
-    color: var(--logo-color);
-}
+  &__span {
+    color: $logo-color;
+  }
 
-.navigation-list {
+  &__roster {
     display: flex;
     gap: 30px;
-}
+  }
 
-.navigation-item:last-child {
+  &__point:last-child {
     margin-right: 318px;
-}
+  }
 
-.navigation-item {
+  &__point {
     position: relative;
-}
+  }
 
-.navigation-link {
-    color: var(--max-text-color);
+  &__reference {
+    color: $max-text-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
@@ -46,47 +45,48 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.navigation-link::after {
+  &__reference::after {
     content: "";
     display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background: var(--button-backgrouhd-color);
+    background: $button-backgrouhd-color;
     position: absolute;
     left: 0;
     top: 49px;
     opacity: 0;
-    color: var(--team-background-color);
+    color: $team-background-color;
     transition-property: color, opacity;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.navigation-link:hover::after {
+  &__reference:hover::after {
+    content: "";
     opacity: 1;
-    color: var(--button-backgrouhd-color);
-}
+    color: $button-backgrouhd-color;
+  }
 
-.navigation-link:hover {
-    color: var(--button-backgrouhd-color);
+  &__reference:hover {
+    color: $button-backgrouhd-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-    color: var(--button-backgrouhd-color);
-}
+    color: $button-backgrouhd-color;
+  }
 
-.header-list {
+  &__list {
     display: flex;
     gap: 50px;
-}
+  }
 
-.header-information {
-    color: var(--mini-text-color);
+  &__information {
+    color: $mini-text-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
@@ -98,47 +98,40 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.header-icont {
-    fill: var(--mini-text-color);
+  &__icon:last-child {
+    fill: $mini-text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-.header-icon {
-    fill: var(--mini-text-color);
+  &__icon:first-child {
+    fill: $mini-text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-information:hover {
-    color: var(--button-backgrouhd-color);
+  }
+  &__icon:first-child {
+    width: 10px;
+    height: 16px;
+    fill: $mini-text-color;
+  }
+  &__icon:last-child {
+    width: 16px;
+    height: 12px;
+    fill: $mini-text-color;
+  }
+  &__information:hover {
+    color: $button-backgrouhd-color;
     font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
-
-    .header-icon {
-        fill: var(--button-backgrouhd-color);
+    .header__icon {
+      fill: $button-backgrouhd-color;
     }
-
-    .header-icont {
-        fill: var(--button-backgrouhd-color);
-    }
-}
-
-.header-icon {
-    width: 16px;
-    height: 12px;
-    fill: var(--mini-text-color);
-}
-
-.header-icont {
-    width: 10px;
-    height: 16px;
-    fill: var(--mini-text-color);
+  }
 }

@@ -1,9 +1,9 @@
 .work {
     padding-bottom: 94px;
-}
 
-.work-subtitle {
-    color: var(--max-text-color);
+
+&__subtitle {
+    color: $max-text-color;
     text-align: center;
     font-family: "Roboto";
     font-size: 36px;
@@ -13,18 +13,18 @@
     margin-bottom: 50px;
 }
 
-.work-list {
+&__list {
     display: flex;
     gap: 30px;
 }
 
-.work-item {
+&__item {
     justify-content: center;
     text-align: center;
     position: relative;
 }
 
-.work-bcg {
+&__bcg {
     position: absolute;
     bottom: 0;
     background-color: #2f303acd;
@@ -42,4 +42,5 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+}
 }
