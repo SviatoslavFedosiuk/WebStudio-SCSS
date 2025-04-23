@@ -1,4 +1,4 @@
-footer {
+.footer {
     background-color: $header-footer-background-color;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -9,17 +9,16 @@ footer {
     align-items: baseline;
 }
 
-&__link {
+&__link{
     color: $button-backgrouhd-color;
-    font-family: "Raleway";
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 1.38;
-    letter-spacing: 0.78px;
-    margin-right: 93px;
-    &__span {
-            color: $logo-color;
-            margin-bottom: 20px;
-        }
+        font-family: "Raleway";
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 1.38;
+        letter-spacing: 0.78px;
+}
+&__span {
+    color: $primary-color;
+    margin-bottom: 20px;
 }
 }

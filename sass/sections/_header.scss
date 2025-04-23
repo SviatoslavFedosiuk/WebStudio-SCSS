@@ -100,25 +100,25 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__icon:last-child {
+  &__picture {
     fill: $mini-text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__icon:first-child {
+  &__icon {
     fill: $mini-text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__icon:first-child {
+  &__picture {
     width: 10px;
     height: 16px;
     fill: $mini-text-color;
   }
-  &__icon:last-child {
+  &__icon {
     width: 16px;
     height: 12px;
     fill: $mini-text-color;
