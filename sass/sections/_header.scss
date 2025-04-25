@@ -1,3 +1,4 @@
+
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
@@ -100,25 +101,18 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  &__picture {
-    fill: $mini-text-color;
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   &__icon {
     fill: $mini-text-color;
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__picture {
+  &__icon:last-child {
     width: 10px;
     height: 16px;
     fill: $mini-text-color;
   }
-  &__icon {
+  &__icon:first-child {
     width: 16px;
     height: 12px;
     fill: $mini-text-color;

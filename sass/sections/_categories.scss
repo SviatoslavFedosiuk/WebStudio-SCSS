@@ -26,18 +26,17 @@
     transition-property: box-shadow, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-&__button:hover {
-    color: $primary-color;
-    text-align: center;
-    font-family: "Roboto";
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.62;
-    letter-spacing: 0.48px;
-    background-color: $button-backgrouhd-color;
-    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
-        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+    &:hover {
+            color: $primary-color;
+            text-align: center;
+            font-family: "Roboto";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.62;
+            letter-spacing: 0.48px;
+            background-color: $button-backgrouhd-color;
+            box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
+                0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+        }
 }
 }

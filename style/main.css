@@ -145,24 +145,18 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__picture {
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 .header__icon {
   fill: #757575;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header__picture {
+.header__icon:last-child {
   width: 10px;
   height: 16px;
   fill: #757575;
 }
-.header__icon {
+.header__icon:first-child {
   width: 16px;
   height: 12px;
   fill: #757575;
@@ -416,7 +410,7 @@ body {
 .team__button:hover {
   background-color: #2196f3;
 }
-.team__button:hover__icons {
+.team__button:hover .team__icons {
   fill: #ffffff;
 }
 .team__listt {
@@ -488,6 +482,40 @@ body {
 }
 .clients__icon:hover {
   fill: #2196f3;
+}
+.clients__box {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid;
+  color: #AFB1B8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__icon {
+  width: 106px;
+  height: 60px;
+  fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__box:hover, .clients__box:focus {
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+}
+.clients__box:hover .clients__icon, .clients__box:focus .clients__icon {
+  fill: #2196f3;
+}
+.clients__box:hover + .clients__icon, .clients__box:focus + .clients__icon {
+  fill: #2196f3;
+  background-color: #FFF;
 }
 
 .footer {
@@ -800,8 +828,28 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__input:hover + .modal__picture:focus {
+.modal__input {
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  height: 40px;
+  width: 100%;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+  padding-right: 30px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__input:hover, .modal__input:focus {
+  border: none;
+  outline: 1px solid;
+  color: #2196f3;
+}
+.modal__input:hover + .modal__picture, .modal__input:focus + .modal__picture {
   fill: #2196f3;
+  background-color: #FFF;
 }
 .modal__checkbox {
   width: 16px;

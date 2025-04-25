@@ -167,8 +167,32 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-&__input:hover + .modal__picture:focus{
+&__input {
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.20);
+    height: 40px;
+    width: 100%;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding-left: 42px;
+    padding-right: 30px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__input:hover,
+&__input:focus {
+    border: none;
+    outline: 1px solid;
+    color: $button-backgrouhd-color;
+}
+
+&__input:hover+&__picture,
+&__input:focus+&__picture {
     fill: $button-backgrouhd-color;
+    background-color: #FFF;
 }
 
 &__checkbox {

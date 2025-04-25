@@ -38,19 +38,47 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            width: 170px;
+            height: 92px;
+            border-radius: 4px;
+            border: 1px solid;
+            color: $button-backgrouhd-color;
+    
+            &__icon {
+                fill: $button-backgrouhd-color;
+            }
+        }
 }
 
-&__box:hover {
+&__icon {
+    width: 106px;
+    height: 60px;
+    fill: $new-section;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+            fill: $button-backgrouhd-color;
+        }
+}
+
+
+&__box {
     width: 170px;
     height: 92px;
     border-radius: 4px;
     border: 1px solid;
-    color: $button-backgrouhd-color;
-
-    &__icon {
-        fill: $button-backgrouhd-color;
-    }
+    color: $new-section;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 &__icon {
     width: 106px;
@@ -61,7 +89,21 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&__icon:hover {
+&__box:hover,
+&__box:focus {
+    width: 170px;
+        height: 92px;
+        border-radius: 4px;
+        border: 1px solid $button-backgrouhd-color;
+    
+        .clients__icon {
+            fill: $button-backgrouhd-color;
+        }
+}
+
+&__box:hover + &__icon,
+&__box:focus + &__icon {
     fill: $button-backgrouhd-color;
+    background-color: #FFF;
 }
 }
