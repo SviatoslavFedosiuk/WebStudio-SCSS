@@ -43,6 +43,11 @@ input[type=checkbox] {
   cursor: pointer;
 }
 
+.modal__checkbox, .modal__picture, .modal__textarea, .modal__input, .modal__svg, .modal__knob, .content__item, .content__description, .categories__button, .footer__buttons, .clients__icon, .clients__box, .team__button, .header__icon, .header__information, .header__reference::after, .header__reference {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   font-family: "Roboto";
 }
@@ -88,14 +93,11 @@ body {
 }
 .header__reference {
   color: #212121;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__reference::after {
   content: "";
@@ -110,8 +112,6 @@ body {
   opacity: 0;
   color: #f5f4fa;
   transition-property: color, opacity;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__reference:hover::after {
   content: "";
@@ -120,7 +120,6 @@ body {
 }
 .header__reference:hover {
   color: #2196f3;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -133,7 +132,6 @@ body {
 }
 .header__information {
   color: #757575;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -142,14 +140,10 @@ body {
   align-items: center;
   gap: 10px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__icon {
   fill: #757575;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header__icon:last-child {
   width: 10px;
@@ -163,7 +157,6 @@ body {
 }
 .header__information:hover {
   color: #2196f3;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   line-height: 1.14;
@@ -171,6 +164,10 @@ body {
 }
 .header__information:hover .header__icon {
   fill: #2196f3;
+}
+
+.active {
+  color: #2196f3;
 }
 
 .page {
@@ -185,7 +182,6 @@ body {
 .page__title {
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto";
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -199,7 +195,6 @@ body {
 .page__button {
   background-color: #2196f3;
   color: #ffffff;
-  font-family: "Roboto";
   text-align: center;
   font-size: 16px;
   font-weight: 700;
@@ -275,7 +270,6 @@ body {
 }
 .advantudes__slogan {
   color: #212121;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
@@ -285,7 +279,6 @@ body {
 }
 .advantudes__text {
   color: #757575;
-  font-family: "Roboto";
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
@@ -298,7 +291,6 @@ body {
 .work__subtitle {
   color: #212121;
   text-align: center;
-  font-family: "Roboto";
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -321,11 +313,11 @@ body {
   width: 100%;
   height: 23.812%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   color: #fff;
   text-align: center;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -342,7 +334,6 @@ body {
 .team__subtitle {
   color: #212121;
   text-align: center;
-  font-family: "Roboto";
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
@@ -370,7 +361,6 @@ body {
 .team__slogan {
   color: #212121;
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.18;
@@ -380,19 +370,10 @@ body {
 .team__text {
   color: #757575;
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
   letter-spacing: 0.48px;
-}
-.team a[href^=https] {
-  color: #ffffff;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.17;
-  letter-spacing: 0.42px;
 }
 .team__button {
   width: 44px;
@@ -403,9 +384,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team__button:hover {
   background-color: #2196f3;
@@ -438,7 +418,6 @@ body {
   margin-bottom: 50px;
   color: #212121;
   text-align: center;
-  font-family: Roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -456,11 +435,10 @@ body {
   border: 1px solid;
   color: #AFB1B8;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__box:hover {
   width: 170px;
@@ -477,8 +455,6 @@ body {
   height: 60px;
   fill: #AFB1B8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon:hover {
   fill: #2196f3;
@@ -490,19 +466,16 @@ body {
   border: 1px solid;
   color: #AFB1B8;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__icon {
   width: 106px;
   height: 60px;
   fill: #AFB1B8;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__box:hover, .clients__box:focus {
   width: 170px;
@@ -544,21 +517,19 @@ body {
   font-style: normal;
   width: 231px;
 }
-.footer__list:first-child {
-  margin-bottom: 9px;
-}
 .footer__place {
   color: #ffffff;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+.footer__item {
+  margin-top: 9px;
+}
 .footer__phone {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -567,7 +538,6 @@ body {
 }
 .footer__gmail {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -582,7 +552,6 @@ body {
 }
 .footer__title {
   color: #fff;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -600,13 +569,12 @@ body {
   height: 44px;
   border-radius: 50%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   border: 0;
   background-color: rgba(255, 255, 255, 0.1);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__buttons:hover {
   background-color: #2196f3;
@@ -621,7 +589,6 @@ body {
 }
 .footer__text {
   color: #fff;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -637,7 +604,6 @@ body {
 }
 .footer__label {
   color: rgba(255, 255, 255, 0.6);
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -667,6 +633,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -679,7 +646,6 @@ body {
   padding-right: 62px;
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -710,7 +676,6 @@ body {
   color: #212121;
   border-color: #f5f4fa;
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
@@ -721,13 +686,10 @@ body {
   padding: 6px 22px 6px 22px;
   border-radius: 4px;
   transition-property: box-shadow, background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .categories__button:hover {
   color: #ffffff;
   text-align: center;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
@@ -739,12 +701,12 @@ body {
 .content__list {
   display: flex;
   justify-content: center;
+  align-items: none;
   flex-wrap: wrap;
   gap: 30px;
 }
 .content__subtitle {
   color: #212121;
-  font-family: "Roboto";
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -756,7 +718,6 @@ body {
 }
 .content__description {
   color: #FFF;
-  font-family: Roboto;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -770,8 +731,6 @@ body {
   z-index: 1;
   opacity: 1;
   transition-property: opacity, transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(101%);
 }
 .content__description:hover .content__description:focus {
@@ -783,38 +742,10 @@ body {
 }
 .content__item {
   transition-property: box-shadow;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .content__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-}
-.content__item:first-child {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:nth-child(2n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__:nth-child(3n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:nth-child(4n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:nth-child(5n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__litem:nth-child(6n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:nth-child(7n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:nth-child(8n) {
-  flex-basis: calc((100% - 60px) / 3);
-}
-.content__item:last-child {
-  flex-basis: calc((100% - 60px) / 3);
 }
 .content__picture {
   border: 1px solid #eee;
@@ -826,7 +757,6 @@ body {
 }
 .content__text {
   color: #757575;
-  font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
@@ -841,8 +771,9 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -877,11 +808,10 @@ body {
   top: 8px;
   right: 8px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__knob:hover, .modal__knob:focus {
   border: 0px solid transparent;
@@ -895,8 +825,6 @@ body {
   height: 18px;
   fill: #000000;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__svg:hover, .modal__svg:focus {
   fill: #2196f3;
@@ -904,7 +832,6 @@ body {
 .modal__title {
   color: #212121;
   text-align: center;
-  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -914,7 +841,6 @@ body {
 }
 .modal__label {
   color: #757575;
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -933,8 +859,6 @@ body {
   padding-left: 42px;
   padding-right: 30px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:hover, .modal__input:focus {
   border: none;
@@ -954,7 +878,6 @@ body {
   margin-top: 4px;
   margin-bottom: 20px;
   color: rgba(117, 117, 117, 0.5);
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -965,8 +888,6 @@ body {
   padding-right: 16px;
   padding-left: 16px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__textarea:hover, .modal__textarea:focus {
   border: none;
@@ -981,8 +902,6 @@ body {
   top: 50%;
   left: 3%;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input {
   border-radius: 4px;
@@ -995,8 +914,6 @@ body {
   padding-left: 42px;
   padding-right: 30px;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__input:hover, .modal__input:focus {
   border: none;
@@ -1015,8 +932,6 @@ body {
   border-color: #212121;
   border-radius: 50%;
   transition-property: border-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__checkbox:hover:checked, .modal__checkbox:focus:checked {
   border-color: #2196f3;
@@ -1038,13 +953,13 @@ body {
 }
 .modal__check {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 .modal__text {
   color: #757575;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1054,7 +969,6 @@ body {
 }
 .modal__link {
   color: #2196F3;
-  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1069,8 +983,9 @@ body {
 }
 .modal__send {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 .modal__button {
   padding-top: 10px;
@@ -1079,7 +994,6 @@ body {
   padding-left: 52px;
   color: #FFF;
   text-align: center;
-  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;

@@ -13,7 +13,6 @@
     margin-bottom: 50px;
     color: $max-text-color;
     text-align: center;
-    font-family: Roboto;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -32,12 +31,9 @@
     border-radius: 4px;
     border: 1px solid;
     color: $new-section;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box ();
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     &:hover {
             width: 170px;
             height: 92px;
@@ -56,8 +52,7 @@
     height: 60px;
     fill: $new-section;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
     &:hover {
             fill: $button-backgrouhd-color;
         }
@@ -70,12 +65,8 @@
     border-radius: 4px;
     border: 1px solid;
     color: $new-section;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -85,8 +76,7 @@
     height: 60px;
     fill: $new-section;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__box:hover,

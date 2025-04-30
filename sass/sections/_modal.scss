@@ -5,9 +5,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden .modal {
@@ -42,12 +40,9 @@
     position: absolute;
     top: 8px;
     right: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__knob:hover,
@@ -65,8 +60,7 @@
     height: 18px;
     fill: $logo-color;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__svg:hover,
@@ -77,7 +71,6 @@
 &__title {
     color: $max-text-color;
     text-align: center;
-    font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -88,7 +81,6 @@
 
 &__label {
     color: $mini-text-color;
-    font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -109,8 +101,7 @@
     padding-left: 42px;
     padding-right: 30px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__input:hover,
@@ -135,7 +126,6 @@
     margin-top: 4px;
     margin-bottom: 20px;
     color: rgba(117, 117, 117, 0.50);
-    font-family: Roboto;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -146,8 +136,7 @@
     padding-right: 16px;
     padding-left: 16px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__textarea:hover,
@@ -164,8 +153,7 @@
     top: 50%;
     left: 3%;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 &__input {
     border-radius: 4px;
@@ -178,8 +166,7 @@
     padding-left: 42px;
     padding-right: 30px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__input:hover,
@@ -203,8 +190,7 @@
     border-color: $max-text-color;
     border-radius: 50%;
     transition-property: border-color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__checkbox:hover:checked,
@@ -230,15 +216,12 @@
 }
 
 &__check {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
     margin-bottom: 30px;
 }
 
 &__text {
     color: $mini-text-color;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -249,7 +232,6 @@
 
 &__link {
     color: #2196F3;
-    font-family: Roboto;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -263,9 +245,7 @@
 }
 
 &__send {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box();
 }
 
 &__button {
@@ -275,7 +255,6 @@
     padding-left: 52px;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

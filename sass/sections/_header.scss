@@ -38,14 +38,12 @@
 
   &__reference {
     color: $max-text-color;
-    font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__reference::after {
@@ -61,8 +59,7 @@
     opacity: 0;
     color: $team-background-color;
     transition-property: color, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__reference:hover::after {
@@ -73,7 +70,6 @@
 
   &__reference:hover {
     color: $button-backgrouhd-color;
-    font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -88,7 +84,6 @@
 
   &__information {
     color: $mini-text-color;
-    font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -97,15 +92,13 @@
     align-items: center;
     gap: 10px;
     transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
 
   &__icon {
     fill: $mini-text-color;
     transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
   }
   &__icon:last-child {
     width: 10px;
@@ -119,7 +112,6 @@
   }
   &__information:hover {
     color: $button-backgrouhd-color;
-    font-family: "Roboto";
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
@@ -128,4 +120,7 @@
       fill: $button-backgrouhd-color;
     }
   }
+}
+.active{
+  color: $button-backgrouhd-color;
 }

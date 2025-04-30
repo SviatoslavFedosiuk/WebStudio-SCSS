@@ -7,7 +7,6 @@
 &__subtitle {
     color: $max-text-color;
     text-align: center;
-    font-family: "Roboto";
     font-size: 36px;
     font-weight: 700;
     line-height: 1.16;
@@ -41,7 +40,6 @@
 &__slogan {
     color: $max-text-color;
     text-align: center;
-    font-family: "Roboto";
     font-size: 16px;
     font-weight: 500;
     line-height: 1.18;
@@ -52,21 +50,13 @@
 &__text {
     color: $mini-text-color;
     text-align: center;
-    font-family: "Roboto";
     font-size: 16px;
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.48px;
 }
 
-a[href^="https"] {
-    color: $primary-color;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.17;
-    letter-spacing: 0.42px;
-}
+
 
 &__button {
     width: 44px;
@@ -74,12 +64,9 @@ a[href^="https"] {
     border-radius: 50%;
     border: none;
     background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-box();
     transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @extend %transition;
 }
 
 &__button:hover {
