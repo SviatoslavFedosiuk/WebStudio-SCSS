@@ -17,6 +17,9 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
 div {
@@ -53,17 +56,45 @@ body {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  outline: 1px solid red;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 23px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header > .container {
   display: flex;
@@ -72,11 +103,23 @@ body {
 .header__link {
   color: #2196f3;
   font-family: "Raleway";
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
   line-height: 1.38;
-  letter-spacing: 0.78px;
-  margin-right: 93px;
+  letter-spacing: 0.72px;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    margin-right: 93px;
+    letter-spacing: 0.78px;
+    font-size: 26px;
+  }
 }
 .header__span {
   color: #000000;
@@ -84,6 +127,7 @@ body {
 .header__roster {
   display: flex;
   gap: 30px;
+  width: 284px;
 }
 .header__point:last-child {
   margin-right: 318px;
@@ -128,7 +172,25 @@ body {
 }
 .header__list {
   display: flex;
-  gap: 50px;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    gap: 30px;
+    flex-direction: row;
+  }
 }
 .header__information {
   color: #757575;
@@ -140,6 +202,12 @@ body {
   align-items: center;
   gap: 10px;
   transition-property: color;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    font-size: 12px;
+    letter-spacing: 0.24px;
+  }
 }
 .header__icon {
   fill: #757575;
