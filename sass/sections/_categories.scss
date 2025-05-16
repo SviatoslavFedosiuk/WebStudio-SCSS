@@ -1,12 +1,28 @@
 .categories {
-    padding-top: 94px;
-    padding-bottom: 94px;
-
+    padding-top: 60px;
+    padding-bottom: 46px;
+    @media screen and (min-width: 768px) {
+            padding-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding-top: 94px;
+                padding-bottom: 48px;           }
 &__list {
     display: flex;
     gap: 8px;
-    justify-content: center;
-    margin-bottom: 50px;
+    // row-gap: 15px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    justify-content: start;
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 48px;   }
 }
 
 &__button {
