@@ -39,7 +39,27 @@
   &__span {
     color: $logo-color;
   }
-
+  &__btn{
+    background-color: transparent;
+    background-color: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: end;
+    @media screen and (min-width: 768px) {
+        display: block; }
+                @media screen and (min-width: 1200px) {
+                  display: block;     }
+  }
+  &__menu{
+    width: 40px;
+    height: 40px;
+    @media screen and (min-width: 768px) {
+      display: none; }
+              @media screen and (min-width: 1200px) {
+                display: none;     }
+  }
   &__roster {
     display: none;
     gap: 30px;

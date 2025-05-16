@@ -124,6 +124,39 @@ body {
 .header__span {
   color: #000000;
 }
+.header__btn {
+  background-color: transparent;
+  background-color: none;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: end;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__btn {
+    display: block;
+  }
+}
+.header__menu {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__menu {
+    display: none;
+  }
+}
 .header__roster {
   display: none;
   gap: 30px;
@@ -866,6 +899,7 @@ body {
   margin-bottom: 60px;
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 @media screen and (min-width: 768px) {
   .footer__soc {
@@ -969,8 +1003,13 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1882352941);
   background-color: rgba(33, 150, 243, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  width: 450px;
-  height: 50px;
+  display: block;
+  width: 100%;
+}
+@media screen and (min-width: 480px) {
+  .footer__input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer__input {
@@ -1082,6 +1121,12 @@ body {
 .content {
   display: flex;
   justify-content: start;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .content {
+    padding-bottom: 94px;
+  }
 }
 .content__list {
   display: flex;
@@ -1089,6 +1134,7 @@ body {
   align-items: none;
   flex-wrap: wrap;
   gap: 30px;
+  row-gap: 30px;
 }
 .content__subtitle {
   color: #212121;
@@ -1142,7 +1188,6 @@ body {
 }
 .content__item {
   transition-property: box-shadow;
-  flex-basis: calc((100% - 60px) / 3);
 }
 .content__item:hover {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
