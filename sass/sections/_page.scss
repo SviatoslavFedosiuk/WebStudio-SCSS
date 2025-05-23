@@ -24,21 +24,19 @@
     line-height: 42px;
     letter-spacing: 2.64px;
     text-transform: uppercase;
-    width: 360px;
-    margin-right: 60px;
-    margin-left: 60px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
-
+    @media screen and (min-width: 480px) {
+        width: 360px;
+      }
     @media screen and (min-width: 768px) {
-      margin-left: 204px;
-      margin-right: 204px;
     }
 
     @media screen and (min-width: 1200px) {
       font-size: 44px;
       line-height: 1.36;
-      margin-left: 285px;
-      margin-right: 285px;
       width: 696px;
     }
   }
