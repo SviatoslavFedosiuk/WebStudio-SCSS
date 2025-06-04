@@ -48,22 +48,12 @@
            margin-right: 165px;
         }
         @media screen and (min-width: 1200px) {
-            text-align: start;
+            text-align: left;
             margin-right: 0;
             margin-bottom: 0;
         }
 }
 
-
-// &__mix{
-//     display: flex;
-//     @media screen and (min-width: 480px) {
-//             flex-direction: column;
-//         }
-//     @media screen and (min-width: 768px) {
-//         display: block;
-//     }
-// }
 // address-----------------------------------
 
 
@@ -127,7 +117,8 @@
            margin-bottom: 0;        }
                 @media screen and (min-width: 1200px) {
                     margin-left: 70px;
-                    margin-right: 93px;                }
+                    margin-right: 93px;   
+                             }
 }
 
 &__title {

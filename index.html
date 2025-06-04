@@ -70,7 +70,7 @@
       <section class="page">
         <div class="container">
           <h1 class="page__title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="page__button animate__animated animate__pulse animate__infinite	infinite" type="button" data-modal-open>Замовити послугу</button>
+          <button class="page__button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- 2 -->
@@ -265,7 +265,6 @@
         <div class="footer__section">
         <a class="footer__link" href="./index.html"
           >Web<span class="footer__span">Studio</span></a>
-          <!-- <div class="footer__mix"> -->
         <address class="footer__address">
           <a
             class="footer__place"
@@ -320,9 +319,9 @@
           </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__knob"><svg class="modal__svg">
+        <button class="modal__knob" data-modal-close><svg class="modal__svg">
           <use class="modal__use" href="./images/symbol-defs.svg#icon-close"></use>
         </svg></button>
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>

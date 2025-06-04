@@ -48,10 +48,10 @@
     display: flex;
     justify-content: end;
     @media screen and (min-width: 768px) {
-        display: block; }
+        display: none; }
                 @media screen and (min-width: 1200px) {
-                  display: block;     }
-  }
+                  display: none}
+                }
   &__menu{
     width: 40px;
     height: 40px;
@@ -63,14 +63,17 @@
   &__roster {
     display: none;
     gap: 30px;
-    width: 284px;
     @media screen and (min-width: 768px) {
       display: flex;
+      margin-right: 96px;
     }
+        @media screen and (min-width: 1200px) {
+          margin-right: 318px;
+        }
   }
 
 &__point:last-child {
-  margin-right: 318px;
+  width: 64px;
 }
 
 &__point {
