@@ -25,7 +25,7 @@
         <a class="header__link" href="../index.html"
           >Web<span class="header__span">Studio</span></a
         >
-        <button class="header__btn" type="button"><svg class="header__menu">
+        <button class="header__btn" type="button" data-mobile-open><svg class="header__menu">
           <use href="../images/symbol-defs.svg#icon-burger"></use>
         </svg></button>
         <nav class="header__navigation">
@@ -52,12 +52,47 @@
           </li>
           <li class="header__item">
             <a class="header__information" href="tel:+380961111111h"
-              ><svg class="header__icon">
+              ><svg class="header__svg">
                 <use href="../images/symbol-defs.svg#icon-smartphone"></use>
               </svg>+38 096 111 11 11</a
             >
           </li>
         </ul>
+        <div class="mobile is-hidden" data-mobile>
+          <button class="mobile__knob" data-mobile-close><svg class="mobile__svg">
+            <use class="mobile__use" href="../images/symbol-defs.svg#icon-close"></use>
+          </svg></button>
+          <ul class="mobile__roster">
+            <li class="mobile__point">
+              <a class="mobile__reference" href="../index.html">Студія</a>
+            </li>
+            <li class="mobile__point">
+              <a class="mobile__reference  active" href="../pages/portfoilo.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile__point">
+              <a class="mobile__reference" href="">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile__list">
+            <li class="mobile__item">
+              <a class="mobile__informationem" href="mailto:info@devstudio.com">info@devstudio.com</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__information" href="tel:+380961111111h"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__soc">
+            <li class="mobile__item"><a href="" class="mobile__link">Instagram</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Twitter</a></li>
+            <li class="mobile__item"><a href="" class="mobile__link">Facebook</a></li>
+            <li class="mobile__item"><a href="" class="mobile__linked">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -291,6 +326,6 @@
           </div>
       </div>
     </footer>
-    <script src="./js/mobile.js" type="module"></script>
+    <script src="../js/mobile.js" type="module"></script>
   </body>
 </html>

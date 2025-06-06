@@ -1,0 +1,130 @@
+
+.is-hidden .mobile {
+    transform: scale(0.8);
+    opacity: 0;
+    z-index: 0;
+}
+
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.mobile {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $primary-color;
+    // position: relative;
+    @include flex-box();
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+&__knob {
+    width: 40px;
+    height: 40px;
+    background-color: $primary-color;
+    position: absolute;
+    border: none;
+    top: 10px;
+    right: 15px;
+    @include flex-box();
+    transition-property: color;
+    @extend %transition;
+}
+&__knob:hover,
+&__knob:focus {
+
+    .mobile__svg {
+        fill: #2196F3;
+    }
+}
+&__svg {
+    width: 30px;
+    height: 30px;
+    fill: $logo-color;
+    transition-property: fill;
+    @extend %transition;
+}
+
+&__svg:hover,
+&__svg:focus {
+    fill: $button-backgrouhd-color;
+}
+&__roster{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    top: 48px;
+    left: 40px;
+}
+&__reference{
+    color: $max-text-color;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+}
+&__list{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 32px;
+    position: absolute;
+    left: 40px;
+    top: 562px;
+}
+&__information{
+    color:$button-backgrouhd-color ;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.68px;
+}
+&__informationem {
+    color: $mini-text-color;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.48px;
+}
+&__soc{
+    display: flex;
+    // gap: 20px;
+    position: absolute;
+    left: 40px;
+    bottom: 48px;
+}
+&__link{
+    color: $button-backgrouhd-color;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+        letter-spacing: 0.36px;
+        border-right: 1px solid $mini-text-color;
+padding-right: 10px;
+padding-left: 10px;}
+
+&__linked {
+    color: $button-backgrouhd-color;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.36px;
+    border-left: 1px solid $mini-text-color;
+    padding-left: 10px;
+}
+}
+
+.active {
+    color: $button-backgrouhd-color; }
